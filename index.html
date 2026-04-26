@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Orçamentos para Freelancers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Ferramenta para Portfólio</p>
+          <h1>Gerador de Orçamentos</h1>
+        </div>
+        <button id="printBtn" class="btn btn-primary">Gerar PDF / Imprimir</button>
+      </header>
+
+      <section class="card">
+        <h2>Dados do Freelancer</h2>
+        <p class="muted">
+          Esses dados ficam salvos no navegador usando LocalStorage.
+        </p>
+        <div class="grid grid-3">
+          <label>
+            Nome
+            <input id="freelancerName" type="text" placeholder="Seu nome ou empresa" />
+          </label>
+          <label>
+            Logo (URL)
+            <input id="freelancerLogo" type="url" placeholder="https://..." />
+          </label>
+          <label>
+            Contato
+            <input id="freelancerContact" type="text" placeholder="email@site.com | +55..." />
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Dados do Cliente</h2>
+        <div class="grid grid-2">
+          <label>
+            Nome do cliente
+            <input id="clientName" type="text" placeholder="Nome do cliente" />
+          </label>
+          <label>
+            Desconto (%)
+            <input id="discountPercent" type="number" min="0" max="100" step="0.1" value="0" />
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="services-header">
+          <h2>Serviços</h2>
+          <button id="addItemBtn" class="btn btn-secondary">Adicionar linha</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Descrição dos serviços</th>
+                <th>Valor unitário (R$)</th>
+                <th>Quantidade</th>
+                <th>Subtotal (R$)</th>
+                <th class="no-print">Ação</th>
+              </tr>
+            </thead>
+            <tbody id="servicesBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card totals">
+        <div class="row">
+          <span>Subtotal</span>
+          <strong id="subtotalValue">R$ 0,00</strong>
+        </div>
+        <div class="row">
+          <span>Desconto</span>
+          <strong id="discountValue">R$ 0,00</strong>
+        </div>
+        <div class="row total">
+          <span>Total</span>
+          <strong id="totalValue">R$ 0,00</strong>
+        </div>
+      </section>
+    </main>
+
+    <template id="serviceRowTemplate">
+      <tr>
+        <td>
+          <input data-field="description" type="text" placeholder="Ex.: Landing page institucional" />
+        </td>
+        <td>
+          <input data-field="unitPrice" type="number" min="0" step="0.01" value="0" />
+        </td>
+        <td>
+          <input data-field="quantity" type="number" min="1" step="1" value="1" />
+        </td>
+        <td data-subtotal>R$ 0,00</td>
+        <td class="no-print">
+          <button data-action="remove" class="btn btn-danger">Remover</button>
+        </td>
+      </tr>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
