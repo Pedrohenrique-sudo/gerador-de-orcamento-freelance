@@ -33,21 +33,16 @@ Este projeto foi criado para simplificar o fluxo de trabalho de freelancers. Ele
 ## 🚀 Como Visualizar o Projeto
 Você pode acessar o projeto rodando online clicando no link abaixo:
 
-👉 **[CLIQUE AQUI PARA TESTAR A FERRAMENTA](https://SEU_USUARIO.github.io/SEU_REPOSITORIO/)**
+👉 **[CLIQUE AQUI PARA TESTAR A FERRAMENTA]( https://pedrohenrique-sudo.github.io/gerador-de-orcamento-freelance/)**
 
 ---
 
-## 🧠 Aprendizados Técnicos
-Durante o desenvolvimento, aprofundei conhecimentos em:
-1. **Manipulação de DOM** para criação de elementos dinâmicos.
-2. **Gerenciamento de estado local** com LocalStorage.
-3. **Tratamento de eventos** em tempo real.
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **[SEU NOME]**
+Arquiteto  **Pedro Hnerique**
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](COLE_LINK_DO_SEU_LINKEDIN)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](COLE_LINK_DO_SEU_GITHUB)
