@@ -1,6 +1,3 @@
-As "caixinhas" (badges) não apareceram antes porque, no Markdown, elas dependem de links de imagens externas para renderizar. Agora eu preparei o código completo para você copiar e colar direto no seu arquivo README.md.
-
-Aqui está a versão "ostentação" com todas as badges coloridas:
 
 📝 Gerador de Orçamentos Freelance
 Uma ferramenta indispensável para freelancers que buscam profissionalismo e agilidade na hora de cobrar seus clientes.
@@ -23,5 +20,4 @@ Armazenamento:
 
 [x] PDF Ready: Um botão e pronto, seu orçamento está na pasta de downloads.
 
-👨‍💻 Contato
-Se gostou desse projeto, bora trocar uma ideia:
+
